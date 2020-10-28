@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.noturno {
+  background-color: #2a2f32;
+}
+
+.diurno {
+  background-color: #fdfdfd;
+}
