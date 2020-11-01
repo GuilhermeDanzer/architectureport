@@ -3,7 +3,7 @@ import { Cards } from "./Cards";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../assets/img/Logo.png";
-const HeaderNav = styled.div`
+export const HeaderNav = styled.div`
   display: flex;
   overflow: hidden;
   justify-content: space-evenly;
