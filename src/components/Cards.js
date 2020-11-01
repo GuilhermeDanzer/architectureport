@@ -13,6 +13,7 @@ const CardBody = styled.div`
   transition: 0.5s all ease-out;
   &:hover {
     background-color: #aa2343;
+    box-shadow: inset 0 0 10px #000000;
   }
 `;
 
