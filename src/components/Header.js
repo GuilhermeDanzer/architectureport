@@ -2,7 +2,7 @@ import React from "react";
 import { Cards } from "./Cards";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import Logo from "../assets/img/Logo.png";
 const HeaderNav = styled.div`
   display: flex;
   overflow: hidden;
@@ -14,7 +14,7 @@ const HeaderNav = styled.div`
   &&:before {
     position: absolute;
     content: "";
-    top: 7px;
+    top: 0;
     height: 1.5px;
     margin: 0 auto;
     left: 0;
@@ -38,6 +38,7 @@ const HeaderNav = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
 `;
 
 const Itens = styled.div`
@@ -73,7 +74,7 @@ const Itens = styled.div`
 const navItens = [
   { nome: "Prédios", route: "/", exact: true },
   { nome: "Interior", route: "/interiores", exact: false },
-  { nome: "Interior", route: "/interiores", exact: false },
+  { nome: "Estabelecimentos Comerciais", route: "/interiores", exact: false },
   { nome: "Interior", route: "/interiores", exact: false },
   { nome: "Interior", route: "/interiores", exact: false },
   { nome: "Interior", route: "/interiores", exact: false },
@@ -83,6 +84,10 @@ const navItens = [
 export const Header = () => {
   return (
     <Wrapper>
+      <div style={{ width: 200, alignSelf: "center" }}>
+        <img src={Logo} alt="Logo" style={{ width: "100%" }} />
+      </div>
+
       <HeaderNav>
         {navItens.map((itens, i) => {
           return (
