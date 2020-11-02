@@ -42,7 +42,7 @@ const Wrapper = styled.div`
 `;
 
 const Itens = styled.div`
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   box-sizing: border-box;
   transition: ease-out 0.9s;
   margin: 10px;

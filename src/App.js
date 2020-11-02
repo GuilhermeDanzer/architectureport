@@ -10,7 +10,13 @@ import predio4 from "./assets/img/predio4.jpeg";
 import predio5 from "./assets/img/predio5.jpeg";
 const Wrapper = styled.div``;
 
-const images = [predio1, predio2, predio3, predio4, predio5];
+const images = [
+  { imagem: predio1, tipo: "Edifício", nome: "Solar Tapajós" },
+  { imagem: predio2, tipo: "Edifício", nome: "Solar Tapajós" },
+  { imagem: predio3, tipo: "Edifício", nome: "Solar Tapajós" },
+  { imagem: predio4, tipo: "Edifício", nome: "Solar Tapajós" },
+  { imagem: predio5, tipo: "Edifício", nome: "Solar Tapajós" },
+];
 const App = () => {
   return (
     <div>
