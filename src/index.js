@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./index.css";
 import { Layout } from "./layout/Layout";
 import { Interior } from "./screens/Interior";
+import { Details } from "./screens/Details";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
@@ -19,6 +20,7 @@ const routing = (
         <Layout>
           <Route exact path="/" component={App} />
           <Route path="/interiores" component={Interior} />
+          <Route path="/detalhes" component={Details} />
         </Layout>
       </Switch>
     </Router>

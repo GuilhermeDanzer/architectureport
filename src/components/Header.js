@@ -92,9 +92,7 @@ export const Header = () => {
         {navItens.map((itens, i) => {
           return (
             <Itens keys={i}>
-              <Link to={itens.route} exact={itens.exact}>
-                {itens.nome}
-              </Link>
+              <Link to={itens.route}>{itens.nome}</Link>
             </Itens>
           );
         })}
